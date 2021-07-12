@@ -1,11 +1,14 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
-        mySprite.vy = -100
+        mySprite.vy = -120
     }
 })
-let mySprite4: Sprite = null
-let mySprite3: Sprite = null
-let mySprite2: Sprite = null
+sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
+    game.over(false)
+})
+let tree: Sprite = null
+let rock: Sprite = null
+let projectile: Sprite = null
 let enemyType = 0
 let mySprite: Sprite = null
 mySprite = sprites.create(img`
@@ -206,10 +209,10 @@ mySprite.ay = 150
 mySprite.x = 20
 scroller.scrollBackgroundWithSpeed(-50, 0)
 forever(function () {
-    pause(5000)
+    pause(2000)
     enemyType = randint(1, 3)
     if (enemyType == 1) {
-        mySprite2 = sprites.create(img`
+        projectile = sprites.createProjectileFromSide(img`
             . . . . f f f f f f . . . . . . 
             . . . f 2 f e e e e f f . . . . 
             . . f 2 2 2 f e e e e f f . . . 
@@ -226,10 +229,10 @@ forever(function () {
             . . . f 5 5 4 f e e f . . . . . 
             . . . . f f f f f f . . . . . . 
             . . . . . . f f f . . . . . . . 
-            `, SpriteKind.Enemy)
-        mySprite2.setPosition(146, 85)
+            `, -50, 0)
+        projectile.y = 90
     } else if (enemyType == 2) {
-        mySprite3 = sprites.create(img`
+        rock = sprites.createProjectileFromSide(img`
             . . . . . . c c c c c c . . . . 
             . . . . c c b b d d d d c . . . 
             . . . c c b b d d d d d d c . . 
@@ -246,10 +249,10 @@ forever(function () {
             c c b b b c c b b c c c c b b c 
             c c c c c c c c b b b b b b c c 
             c c c c c c c c c c c c c c c c 
-            `, SpriteKind.Enemy)
-        mySprite3.setPosition(146, 85)
+            `, -50, 0)
+        rock.y = 90
     } else {
-        mySprite4 = sprites.create(img`
+        tree = sprites.createProjectileFromSide(img`
             ........................
             ........................
             ........................
@@ -290,7 +293,7 @@ forever(function () {
             ...668ee7768867788666...
             ......ee77eeee67ee......
             ......ee6eeeeee6ce......
-            `, SpriteKind.Enemy)
-        mySprite4.setPosition(146, 85)
+            `, -50, 0)
+        tree.y = 80
     }
 })
