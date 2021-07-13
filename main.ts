@@ -1,12 +1,13 @@
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
     if (mySprite.isHittingTile(CollisionDirection.Bottom)) {
-        mySprite.vy = -120
+        mySprite.vy = -130
     }
 })
 sprites.onOverlap(SpriteKind.Player, SpriteKind.Projectile, function (sprite, otherSprite) {
     game.over(false)
 })
 let tree: Sprite = null
+let rock2: Sprite = null
 let rock: Sprite = null
 let projectile: Sprite = null
 let enemyType = 0
@@ -205,12 +206,12 @@ scene.setTile(14, img`
     d d d d d d d d d d d d d d d d 
     d d d d d d d d d d d d d d b d 
     `, true)
-mySprite.ay = 150
+mySprite.ay = 190
 mySprite.x = 20
-scroller.scrollBackgroundWithSpeed(-50, 0)
+scroller.scrollBackgroundWithSpeed(-40, 0)
 forever(function () {
     pause(2000)
-    enemyType = randint(1, 3)
+    enemyType = randint(1, 4)
     if (enemyType == 1) {
         projectile = sprites.createProjectileFromSide(img`
             . . . . f f f f f f . . . . . . 
@@ -233,6 +234,26 @@ forever(function () {
         projectile.y = 90
     } else if (enemyType == 2) {
         rock = sprites.createProjectileFromSide(img`
+            ......cccccc..........cccccc....
+            ....ccbbddddc.......ccbbddddc...
+            ...ccbbddddddc.....ccbbddddddc..
+            ..cbbdbddddddccccccbbdbddddddbc.
+            .cbbbdbbdddccbbddddcbdbbdddddbc.
+            .cbbbddbddccbbddddddcddbddddbbc.
+            cbcbbbddbcbbdbddddddbcddbbbbbcc.
+            cbccbbbbcbbbdbbdddddbcbbdddbccc.
+            cbbccccccbbbddbddddbbcccccccccc.
+            ccbbbbbcbcbbbddbbbbbccbbccbdddbc
+            ccccccccbccbbbbdddbccccccddddddc
+            ccccccccbbcccccccccccccbcbdddddb
+            cbbbcccccbbbbbbccbdddbcbccbdddcb
+            ccbbbcccccccccccddddddcbbccccbbc
+            ccccccccccccccbcbdddddbcbbbbbbcc
+            ccccccccbbbcccbccbdddcbccccccccc
+            `, -50, 0)
+        rock.y = 90
+    } else if (enemyType == 3) {
+        rock2 = sprites.createProjectileFromSide(img`
             . . . . . . c c c c c c . . . . 
             . . . . c c b b d d d d c . . . 
             . . . c c b b d d d d d d c . . 
@@ -250,7 +271,7 @@ forever(function () {
             c c c c c c c c b b b b b b c c 
             c c c c c c c c c c c c c c c c 
             `, -50, 0)
-        rock.y = 90
+        rock2.y = 90
     } else {
         tree = sprites.createProjectileFromSide(img`
             ........................
