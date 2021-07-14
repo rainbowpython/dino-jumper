@@ -575,7 +575,7 @@ forever(function () {
             ................................ee..............................
             `, SpriteKind.back)
         treeFriendly.setPosition(172, 70)
-        treeFriendly.vx = -40
+        treeFriendly.vx = randint(-50, -60)
         treeFriendly.z = randint(1, -1)
         pause(randint(1000, 3000))
     } else {
@@ -683,7 +683,7 @@ forever(function () {
                 . . . f 5 5 4 f e e f . . . . . 
                 . . . . f f f f f f . . . . . . 
                 . . . . . . f f f . . . . . . . 
-                `, -50, 0)
+                `, randint(-40, -60), 0)
             projectile.y = 90
             animation.runImageAnimation(
             projectile,
