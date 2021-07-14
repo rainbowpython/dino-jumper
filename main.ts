@@ -29,7 +29,7 @@ let treeFriendly: Sprite = null
 let doubleJump = 0
 let mySprite: Sprite = null
 let difficulty = 0
-let level = 0
+let level = 1
 mySprite = sprites.create(img`
     ........................
     ........................
@@ -483,30 +483,30 @@ forever(function () {
             dddddddddddddddddddddddbbbbbbbbbbbbddddddddddddddddddddddddddddbbbbbbbbbbbbddddddddddddddddddddddddddddbbbbbbbbbbbbddddddddddddddddddddddddddddbbbbbbbbbbbbddddd
             ddddddddddddddddddd7777777777bbbbbbdddddddddddddddddddddddd7777777777bbbbbbdddddddddddddddddddddddd7777777777bbbbbbdddddddddddddddddddddddd7777777777bbbbbbddddd
             dddddddddddddd77777777777777777777bddddddddddddddddddd77777777777777777777bddddddddddddddddddd77777777777777777777bddddddddddddddddddd77777777777777777777bddddd
-            ddddddddddd7777777777777777777777777ddddddddddddddd7777777777777777777777777ddddddddddddddd7777777777777777777777777ddddddddddddddd7777777777777777777777777dddd
-            dddddddd777777777777777777777777777777dddddddddd777777777777777777777777777777dddddddddd777777777777777777777777777777dddddddddd777777777777777777777777777777dd
-            ddddd77777777777777777777777777777777777ddddd77777777777777777777777777777777777ddddd77777777777777777777777777777777777ddddd77777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
-            7777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777777
+            667676766d677677667676766d677677667676766d677677667676766d677677667676766d677677667676766d677677667676766d677677667676766d677677667676766d677677667676766d677677
+            dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676dd67767ddd76d676
+            dddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6ddddddd6d
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            d11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1dddddd11d1ddddd1ddddd
+            d11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11ddddddddddddd
+            ddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1dddddddbddddddd1d
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            ddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbdddddbddddddddbbddd
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            ddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1dddddddd
+            dddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1ddddddddddddddd1d
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            ddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbddddd11ddddddddbdd
+            ddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11ddddddddddd
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            ddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbdddddddbddddddbbddddd
+            dddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddddddddddddbbddddd
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            dddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddddddddbdddddddddd
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+            11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd
             `)
         treeFriendly = sprites.create(img`
             ..........................66666666..............................
@@ -575,9 +575,9 @@ forever(function () {
             ................................ee..............................
             `, SpriteKind.back)
         treeFriendly.setPosition(172, 70)
-        treeFriendly.vx = -50
+        treeFriendly.vx = -40
         treeFriendly.z = randint(1, -1)
-        pause(2000)
+        pause(randint(1000, 3000))
     } else {
     	
     }
@@ -586,82 +586,84 @@ forever(function () {
     pause(2000 - difficulty)
     enemyType = randint(1, 4)
     if (level == 0) {
-        projectile2 = sprites.createProjectileFromSide(img`
-            . . . . f f f f f . f f f . 
-            . . . f f c c c c f f f f f 
-            . . f c c c c c c b f f f f 
-            . . f c c c c c c 3 c f f f 
-            . f c c c c c c c c 3 3 f . 
-            . f c c 4 c c c c c f f f . 
-            . f f e 4 4 c c c f f f f . 
-            . f f e 4 4 f b f 4 4 f f . 
-            . . f f d d f 1 4 d 4 f . . 
-            . . . f d d d d 4 f f f . . 
-            . . . f e 4 4 4 e e f . . . 
-            . . . f 3 3 3 e d d 4 . . . 
-            . . . f 3 3 3 e d d e . . . 
-            . . . f 6 6 6 f e e f . . . 
-            . . . . f f f f f f . . . . 
-            . . . . . . f f f . . . . . 
-            `, -50, 0)
-        projectile2.y = 90
-        animation.runImageAnimation(
-        projectile2,
-        [img`
-            . . . . f f f f f . f f f . 
-            . . . f f c c c c f f f f f 
-            . . f c c c c c c b f f f f 
-            . . f c c c c c c 3 c f f f 
-            . f c c c c c c c c 3 3 f . 
-            . f c c 4 c c c c c f f f . 
-            . f f e 4 4 c c c f f f f . 
-            . f f e 4 4 f b f 4 4 f f . 
-            . . f f d d f 1 4 d 4 f . . 
-            . . . f d d d d 4 f f f . . 
-            . . . f e 4 4 4 e e f . . . 
-            . . . f 3 3 3 e d d 4 . . . 
-            . . . f 3 3 3 e d d e . . . 
-            . . . f 6 6 6 f e e f . . . 
-            . . . . f f f f f f . . . . 
-            . . . . . . f f f . . . . . 
-            `,img`
-            . . . . . . . . . . . . . . 
-            . . . . f f f f f . f f f . 
-            . . . f f c c c c f f f f f 
-            . . f c c c c c c b f f f f 
-            . . f c c c c c c 3 c f f f 
-            . f c c c c c c c c 3 3 f . 
-            . f c c 4 c c c c c f f f . 
-            . f f c 4 4 c c c f f f f . 
-            . f f f 4 4 f b f 4 4 f f . 
-            . . f f d d f 1 4 d 4 f . . 
-            . . . f d d d e e f f f . . 
-            . . . f e 4 e d d 4 f . . . 
-            . . . f 3 3 e d d e f . . . 
-            . . f f 6 6 f e e f f f . . 
-            . . f f f f f f f f f f . . 
-            . . . f f f . . . f f . . . 
-            `,img`
-            . . . . . . . . . . . . . . 
-            . . . . f f f f f . f f f . 
-            . . . f f c c c c f f f f f 
-            . . f c c c c c c b f f f f 
-            . . f c c c c c c 3 c f f f 
-            . f c c c c c c c c 3 3 f . 
-            . f c c 4 c c c c c f f f . 
-            . f f c 4 4 c c c f f f f . 
-            . f f f 4 4 f b f 4 4 f f . 
-            . . f c d d f 1 4 d 4 f f . 
-            . . . f d d d d 4 f f f . . 
-            . . . f e 4 4 4 e d d 4 . . 
-            . . . f 3 3 3 3 e d d e . . 
-            . . f f 6 6 6 6 f e e f . . 
-            . . f f f f f f f f f f . . 
-            . . . f f f . . . f f . . . 
-            `],
-        100,
-        true
-        )
+        if (enemyType == 1 || enemyType == 2) {
+            projectile2 = sprites.createProjectileFromSide(img`
+                . . . . f f f f f . f f f . 
+                . . . f f c c c c f f f f f 
+                . . f c c c c c c b f f f f 
+                . . f c c c c c c 3 c f f f 
+                . f c c c c c c c c 3 3 f . 
+                . f c c 4 c c c c c f f f . 
+                . f f e 4 4 c c c f f f f . 
+                . f f e 4 4 f b f 4 4 f f . 
+                . . f f d d f 1 4 d 4 f . . 
+                . . . f d d d d 4 f f f . . 
+                . . . f e 4 4 4 e e f . . . 
+                . . . f 3 3 3 e d d 4 . . . 
+                . . . f 3 3 3 e d d e . . . 
+                . . . f 6 6 6 f e e f . . . 
+                . . . . f f f f f f . . . . 
+                . . . . . . f f f . . . . . 
+                `, -50, 0)
+            projectile2.y = 90
+            animation.runImageAnimation(
+            projectile2,
+            [img`
+                . . . . f f f f f . f f f . 
+                . . . f f c c c c f f f f f 
+                . . f c c c c c c b f f f f 
+                . . f c c c c c c 3 c f f f 
+                . f c c c c c c c c 3 3 f . 
+                . f c c 4 c c c c c f f f . 
+                . f f e 4 4 c c c f f f f . 
+                . f f e 4 4 f b f 4 4 f f . 
+                . . f f d d f 1 4 d 4 f . . 
+                . . . f d d d d 4 f f f . . 
+                . . . f e 4 4 4 e e f . . . 
+                . . . f 3 3 3 e d d 4 . . . 
+                . . . f 3 3 3 e d d e . . . 
+                . . . f 6 6 6 f e e f . . . 
+                . . . . f f f f f f . . . . 
+                . . . . . . f f f . . . . . 
+                `,img`
+                . . . . . . . . . . . . . . 
+                . . . . f f f f f . f f f . 
+                . . . f f c c c c f f f f f 
+                . . f c c c c c c b f f f f 
+                . . f c c c c c c 3 c f f f 
+                . f c c c c c c c c 3 3 f . 
+                . f c c 4 c c c c c f f f . 
+                . f f c 4 4 c c c f f f f . 
+                . f f f 4 4 f b f 4 4 f f . 
+                . . f f d d f 1 4 d 4 f . . 
+                . . . f d d d e e f f f . . 
+                . . . f e 4 e d d 4 f . . . 
+                . . . f 3 3 e d d e f . . . 
+                . . f f 6 6 f e e f f f . . 
+                . . f f f f f f f f f f . . 
+                . . . f f f . . . f f . . . 
+                `,img`
+                . . . . . . . . . . . . . . 
+                . . . . f f f f f . f f f . 
+                . . . f f c c c c f f f f f 
+                . . f c c c c c c b f f f f 
+                . . f c c c c c c 3 c f f f 
+                . f c c c c c c c c 3 3 f . 
+                . f c c 4 c c c c c f f f . 
+                . f f c 4 4 c c c f f f f . 
+                . f f f 4 4 f b f 4 4 f f . 
+                . . f c d d f 1 4 d 4 f f . 
+                . . . f d d d d 4 f f f . . 
+                . . . f e 4 4 4 e d d 4 . . 
+                . . . f 3 3 3 3 e d d e . . 
+                . . f f 6 6 6 6 f e e f . . 
+                . . f f f f f f f f f f . . 
+                . . . f f f . . . f f . . . 
+                `],
+            100,
+            true
+            )
+        }
     } else {
         if (enemyType == 1) {
             projectile = sprites.createProjectileFromSide(img`
@@ -681,7 +683,7 @@ forever(function () {
                 . . . f 5 5 4 f e e f . . . . . 
                 . . . . f f f f f f . . . . . . 
                 . . . . . . f f f . . . . . . . 
-                `, -50 - difficulty / 10, 0)
+                `, -50, 0)
             projectile.y = 90
             animation.runImageAnimation(
             projectile,
@@ -775,7 +777,7 @@ forever(function () {
                 ccbbbcccccccccccddddddcbbccccbbc
                 ccccccccccccccbcbdddddbcbbbbbbcc
                 ccccccccbbbcccbccbdddcbccccccccc
-                `, -50 - difficulty / 10, 0)
+                `, -50, 0)
             rock.y = 90
         } else if (enemyType == 3) {
             rock2 = sprites.createProjectileFromSide(img`
@@ -795,7 +797,7 @@ forever(function () {
                 c c b b b c c b b c c c c b b c 
                 c c c c c c c c b b b b b b c c 
                 c c c c c c c c c c c c c c c c 
-                `, -50 - difficulty / 10, 0)
+                `, -50, 0)
             rock2.y = 90
         } else {
             tree = sprites.createProjectileFromSide(img`
@@ -839,7 +841,7 @@ forever(function () {
                 ...668ee7768867788666...
                 ......ee77eeee67ee......
                 ......ee6eeeeee6ce......
-                `, -50 - difficulty / 10, 0)
+                `, -50, 0)
             tree.y = 80
         }
     }
