@@ -577,7 +577,7 @@ forever(function () {
         treeFriendly.setPosition(172, 70)
         treeFriendly.vx = randint(-50, -60)
         treeFriendly.z = randint(1, -1)
-        pause(randint(1000, 3000))
+        pause(randint(1000, 2500))
     } else {
     	
     }
@@ -845,4 +845,10 @@ forever(function () {
             tree.y = 80
         }
     }
+})
+forever(function () {
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(523, music.beat(BeatFraction.Quarter))
+    music.playTone(440, music.beat(BeatFraction.Half))
+    music.playTone(784, music.beat(BeatFraction.Half))
 })
