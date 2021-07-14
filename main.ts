@@ -29,7 +29,7 @@ let treeFriendly: Sprite = null
 let doubleJump = 0
 let mySprite: Sprite = null
 let difficulty = 0
-let level = 1
+let level = 0
 mySprite = sprites.create(img`
     ........................
     ........................
@@ -258,9 +258,16 @@ mySprite,
     ......ccccbddddbc.......
     ..........cd5555dc......
     `],
-60,
+70,
 true
 )
+forever(function () {
+    if (info.score() == 10) {
+        info.changeScoreBy(1)
+        game.splash("level 2")
+        level = 1
+    }
+})
 forever(function () {
     if (level == 0) {
         scene.setBackgroundImage(img`
@@ -847,8 +854,8 @@ forever(function () {
     }
 })
 forever(function () {
-    music.playTone(440, music.beat(BeatFraction.Half))
-    music.playTone(523, music.beat(BeatFraction.Quarter))
-    music.playTone(440, music.beat(BeatFraction.Half))
-    music.playTone(784, music.beat(BeatFraction.Half))
+	
+})
+forever(function () {
+	
 })
