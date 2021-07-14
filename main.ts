@@ -224,15 +224,15 @@ let tree: Sprite = null
 let rock2: Sprite = null
 let rock: Sprite = null
 let projectile: Sprite = null
-let projectile3: Sprite = null
-let projectile2: Sprite = null
 let enemyType = 0
 let treeFriendly: Sprite = null
+let projectile3: Sprite = null
+let projectile2: Sprite = null
 let doubleJump = 0
 let mySprite: Sprite = null
 intDino()
 let difficulty = 0
-let level = 2
+let level = 0
 scene.setTileMap(img`
     . . . . . . . . . . 
     . . . . . . . . . . 
@@ -268,6 +268,8 @@ forever(function () {
         info.changeLifeBy(1)
         game.splash("level 2")
         level = 1
+        projectile2.destroy()
+        projectile3.destroy()
     }
     if (info.score() == 25) {
         info.changeScoreBy(1)
@@ -593,7 +595,7 @@ forever(function () {
         treeFriendly.vx = randint(-50, -60)
         treeFriendly.z = randint(1, -1)
         pause(randint(1000, 2500))
-    } else {
+    } else if (level == 2) {
         scene.setBackgroundImage(img`
             9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
             9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999
@@ -716,6 +718,8 @@ forever(function () {
             dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
             11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddddddddddd11dddddd11ddddddddddddd1
             `)
+    } else {
+    	
     }
 })
 forever(function () {
