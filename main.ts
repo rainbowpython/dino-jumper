@@ -264,7 +264,7 @@ scene.setTile(7, img`
     . . . . . . . . . . . . . . . . 
     `, true)
 scroller.scrollBackgroundWithSpeed(-40, 0)
-mySprite.say("Don't let me get hit!")
+mySprite.say("Don't let me get hit!", 1000)
 forever(function () {
     if (info.score() == 10) {
         info.changeScoreBy(1)
