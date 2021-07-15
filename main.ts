@@ -220,6 +220,7 @@ sprites.onDestroyed(SpriteKind.Projectile, function (sprite) {
     info.changeScoreBy(1)
     difficulty += 20
 })
+let projectile5: Sprite = null
 let projectile4: Sprite = null
 let tree: Sprite = null
 let rock2: Sprite = null
@@ -1322,7 +1323,65 @@ forever(function () {
                 `, -50, 0)
             rock2.y = 90
         } else {
-        	
+            projectile5 = sprites.createProjectileFromSide(img`
+                . . . . c c c c c c . . . . . . 
+                . . . c 6 7 7 7 7 6 c . . . . . 
+                . . c 7 7 7 7 7 7 7 7 c . . . . 
+                . c 6 7 7 7 7 7 7 7 7 6 c . . . 
+                . c 7 c 6 6 6 6 c 7 7 7 c . . . 
+                . f 7 6 f 6 6 f 6 7 7 7 f . . . 
+                . f 7 7 7 7 7 7 7 7 7 7 f . . . 
+                . . f 7 7 7 7 6 c 7 7 6 f c . . 
+                . . . f c c c c 7 7 6 f 7 7 c . 
+                . . c 7 2 7 7 7 6 c f 7 7 7 7 c 
+                . c 7 7 2 7 7 c f c 6 7 7 6 c c 
+                c 1 1 1 1 7 6 f c c 6 6 6 c . . 
+                f 1 1 1 1 1 6 6 c 6 6 6 6 f . . 
+                f 6 1 1 1 1 1 6 6 6 6 6 c f . . 
+                . f 6 1 1 1 1 1 1 6 6 6 f . . . 
+                . . c c c c c c c c c f . . . . 
+                `, randint(-45, -55) - difficulty / 10, 0)
+            projectile5.y = 90
+            animation.runImageAnimation(
+            projectile5,
+            [img`
+                . . . . c c c c c c . . . . . . 
+                . . . c 6 7 7 7 7 6 c . . . . . 
+                . . c 7 7 7 7 7 7 7 7 c . . . . 
+                . c 6 7 7 7 7 7 7 7 7 6 c . . . 
+                . c 7 c 6 6 6 6 c 7 7 7 c . . . 
+                . f 7 6 f 6 6 f 6 7 7 7 f . . . 
+                . f 7 7 7 7 7 7 7 7 7 7 f . . . 
+                . . f 7 7 7 7 6 c 7 7 6 f c . . 
+                . . . f c c c c 7 7 6 f 7 7 c . 
+                . . c 7 2 7 7 7 6 c f 7 7 7 7 c 
+                . c 7 7 2 7 7 c f c 6 7 7 6 c c 
+                c 1 1 1 1 7 6 f c c 6 6 6 c . . 
+                f 1 1 1 1 1 6 6 c 6 6 6 6 f . . 
+                f 6 1 1 1 1 1 6 6 6 6 6 c f . . 
+                . f 6 1 1 1 1 1 1 6 6 6 f . . . 
+                . . c c c c c c c c c f . . . . 
+                `,img`
+                . . . c c c c c c . . . . . . . 
+                . . c 6 7 7 7 7 6 c . . . . . . 
+                . c 7 7 7 7 7 7 7 7 c . . . . . 
+                c 6 7 7 7 7 7 7 7 7 6 c . . . . 
+                c 7 c 6 6 6 6 c 7 7 7 c . . . . 
+                f 7 6 f 6 6 f 6 7 7 7 f . . . . 
+                f 7 7 7 7 7 7 7 7 7 7 f . . . . 
+                . f 7 7 7 7 6 c 7 7 6 f . . . . 
+                . . f c c c c 7 7 6 f c c c . . 
+                . . c 6 2 7 7 7 f c c 7 7 7 c . 
+                . c 6 7 7 2 7 7 c f 6 7 7 7 7 c 
+                . c 1 1 1 1 7 6 6 c 6 6 6 c c c 
+                . c 1 1 1 1 1 6 6 6 6 6 6 c . . 
+                . c 6 1 1 1 1 1 6 6 6 6 6 c . . 
+                . . c 6 1 1 1 1 1 7 6 6 c c . . 
+                . . . c c c c c c c c c c . . . 
+                `],
+            100,
+            true
+            )
         }
     }
 })
